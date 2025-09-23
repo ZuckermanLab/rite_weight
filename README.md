@@ -11,7 +11,8 @@ This randomized clustering approach allows RiteWeight to efficiently estimate lo
 
 
 ---
-Installation
+Installation:
+
 Install from github and update the existing conda env manually as:
 
 git clone https://github.com/sagarkania/rite_weight.git
