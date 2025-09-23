@@ -22,6 +22,8 @@ cd </path/to/rite_weight>
 pip install 
 
 --- 
-Example Usage and Analysis with rite_weight Package
+Example:
+
+Usage and Analysis with rite_weight Package
 The example folder contains a demonstration of how to use the rite_weight package. The Jupyter notebook, example/run_riteweight.ipynb, illustrates how to build the model using data stored in the folder tests/. Additionally, the rite_weight_results_analysis.ipynb notebook provides examples of estimating pdf along a given CV.
 
