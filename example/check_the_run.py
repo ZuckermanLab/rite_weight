@@ -5,7 +5,7 @@ config = {'trans_from_Rfeat_path': './Inputs/trans_from_Rfeat.npy','trans_to_Rfe
 
 my_model = rite_weight.rite_weight_model(config)
 
-initial_weights = np.load('./Inputs/weights_in_Uniform_microstate_wise.npy')
+initial_weights = np.load('./Inputs/weights_in_uniform_microstate_wise.npy')
 iteration = 10
 clusters = 500
 weight_freq = 1
