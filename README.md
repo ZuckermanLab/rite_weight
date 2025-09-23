@@ -1,5 +1,5 @@
 # rite_weight: Randomized Iterative Trajectory Reweighting
-Authors: Sagar Kania, Daniel Zuckerman
+Authors: Sagar Kania, Robert J. Webber, Gideon Simpson, David Aristoff, and Daniel M. Zuckerman
 
 # Background
 **rite_weight** is a lightweight Python package for computing steady-state weights from short molecular dynamics (MD) trajectory segments.
@@ -9,6 +9,7 @@ and reweights the trajectory based on the stationary distribution derived from t
 This randomized clustering approach allows RiteWeight to efficiently estimate long-timescale kinetics and thermodynamics from short simulations 
 — without requiring long trajectories or predefined discrete states. This code is based on the methods described in the pre-print:
 
+Pre-print: RiteWeight: Randomized Iterative Trajectory Reweighting for Steady-State Distributions Without Discretization Error. https://arxiv.org/abs/2401.05597
 
 ---
 Installation:
@@ -19,7 +20,9 @@ git clone https://github.com/sagarkania/rite_weight.git
 
 cd </path/to/rite_weight>
 
-pip install 
+conda activate <your-env-name>
+
+pip install .
 
 --- 
 Example:
