@@ -1,4 +1,4 @@
-# RiteWeight: Randomized Iterative Trajectory Reweighting
+# rite_weight: Randomized Iterative Trajectory Reweighting
 
 **rite_weight** is a lightweight Python package for computing steady-state weights from short molecular dynamics (MD) trajectory segments.
 
