@@ -1,11 +1,11 @@
 from rite_weight import rite_weight 
 import numpy as np
 
-config = {'trans_from_Rfeat_path': './Inputs/trans_from_Rfeat.npy','trans_to_Rfeat_path': './Inputs/trans_to_Rfeat.npy'} #Creating dict
+config = {'trans_from_Rfeat_path': './tests/trans_from_Rfeat.npy','trans_to_Rfeat_path': './tests/trans_to_Rfeat.npy'} #Creating dict
 my_model = rite_weight.rite_weight_model(config) # Initialize the rite_weight calss
 
 
-initial_weights = np.load('./Inputs/weights_in_uniform_microstate_wise.npy')
+initial_weights = np.load('./tests/weights_in_uniform_microstate_wise.npy')
 total_iter = 100
 clusters = 10
 weight_out_freq = 10
