@@ -26,7 +26,7 @@ class rite_weight_model:
         
         total_segs = len(self.trans_from_feat)
         with h5py.File('Reweights.h5', 'w') as f:
-            dset1 = f.create_dataset('weights_out', (total_iterations//weightout_fq, total_segs))
+            dset1 = f.create_dataset('weights_out', (total_segs, total_iterations//weightout_fq))
         
         weights_in = weights_started
         for reweight_iteration in range(total_iterations):
@@ -43,7 +43,7 @@ class rite_weight_model:
             if ( ((reweight_iteration%weightout_fq)==0) ):
                 with h5py.File('Reweights.h5', 'a') as f:
                      dset = f['weights_out']
-                     dset[reweight_iteration // weightout_fq,:] = weights_out 
+                     dset[:, reweight_iteration // weightout_fq] = weights_out 
             
             #Remove low weights Ref Seg 
             neg_weight_seg = np.where(weights_in[:]<= self.thero_weight_ref)    
